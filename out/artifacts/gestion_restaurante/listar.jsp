@@ -47,7 +47,7 @@
                 <td class="text-center">
                     <% if(p.getEstado() == 1) { %>
                     <span class="badge bg-success"><i class="bi bi-check-circle"></i> Activo</span>
-                    <% } else { %>
+                    <% } else if(p.getEstado() == 0) { %>
                     <span class="badge bg-danger"><i class="bi bi-x-circle"></i> Desactivado</span>
                     <% } %>
                 </td>
@@ -68,6 +68,9 @@
             <% } %>
             </tbody>
         </table>
+        <div class="text-center mt-4">
+            <a href="<%=request.getContextPath()%>/LoginServlet" class="btn btn-primary">Menú Principal</a>
+        </div>
     </div>
 </div>
 <!-- Bootstrap JS -->

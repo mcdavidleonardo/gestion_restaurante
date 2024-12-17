@@ -20,7 +20,7 @@
             <h2><i class="bi bi-clipboard"></i> Ingreso de Platos</h2>
         </div>
         <div class="card-body">
-            <form action="<%= request.getContextPath() %>/plato/form" method="post" class="needs-validation" novalidate>
+            <form action="<%= request.getContextPath() %>/plato/form" method="post" class="needs-validation" >
                 <!-- Nombre del Plato -->
                 <div class="mb-3">
                     <label for="nombrePlato" class="form-label">
@@ -103,6 +103,9 @@
                     <button type="submit" class="btn btn-primary">
                         <i class="bi bi-send"></i> Enviar
                     </button>
+                    <div class="text-center mt-4">
+                        <a href="<%=request.getContextPath()%>/platos" class="btn btn-primary">Cancelar</a>
+                    </div>
                 </div>
             </form>
         </div>

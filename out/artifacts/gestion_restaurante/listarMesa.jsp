@@ -63,6 +63,9 @@
       <% } %>
       </tbody>
     </table>
+    <div class="text-center mt-4">
+      <a href="<%=request.getContextPath()%>/LoginServlet" class="btn btn-primary">Menú Principal</a>
+    </div>
   </div>
 </div>
 <!-- Bootstrap JS -->
